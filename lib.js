@@ -34,6 +34,9 @@ function init() {
 }
 
 function onKeyDown(evt) {
+  
+  evt.preventDefault();
+  
   newdir = evt.keyCode - 37;
 
   // only lateral turns are allowed
